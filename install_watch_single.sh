@@ -7,7 +7,7 @@ echo "请输入应用路径（如 /System/Applications/Notes.app）："
 read APP_PATH
 
 USER_HOME=$(eval echo ~${SUDO_USER:-$USER})
-SCRIPT_PATH="${USER_HOME}/check_${APP_NAME}.sh"
+SCRIPT_PATH="${USER_HOME}/scripts/check_${APP_NAME}.sh"
 PLIST_PATH="${USER_HOME}/Library/LaunchAgents/com.user.${APP_NAME}.plist"
 
 # 卸载旧的守护进程（如果存在）
